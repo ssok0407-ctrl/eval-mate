@@ -1167,7 +1167,7 @@
     }
 
     function toggleSubtask(evalId, subtaskId) {
-      evals = evalss = evals.map(e => {
+      evals = evals.map(e => {
         if (e.id === evalId) {
           const subtasks = e.subtasks.map(s => s.id === subtaskId ? { ...s, done: !s.done } : s);
           return { ...e, subtasks };
